@@ -1,0 +1,36 @@
+*{
+    background: rgb(59, 0, 75);
+    color: gold;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    align-items: center;
+    margin-bottom: 50px;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+}
+
+.box {
+    border: 1px solid gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: gold;
+    transition-duration: 0.5s;
+}
